@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.HeroWrapper{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.HeroBg{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.HeroBg::before{
+    content: "";
+    background-image: url(../src/images/handybg.webp);
+    opacity: 0.3;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.HeroHeading{
+    font-size: 3rem;
+    position: relative;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    top: 30%;
+    opacity: 1;
+}
+
+.HeroText{
+    color: black;
+    position: relative;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 1;
+    top: 35%;
+    text-shadow: 2px 2px 2px #CE2121;
+}
+
+.aboutme{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.info{
+    color: black;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (max-width: 480px){
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+.grids{
+    margin-right: 20%;
+    margin-left: 20%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 0  50px;
+
+    @media screen and (max-width: 1500px){
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    @media screen and (max-width: 1100px){
+        grid-template-columns: 1fr;
+        margin: auto;
+        width: 50%;
+    }
+    @media screen and (max-width: 480px){
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+.grid{
+background: white;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+border-radius: 10px;
+max-height: 400px;
+max-width: 360px;
+padding: 30px;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+transition: all 0.2s ease-in;
+text-decoration: none;
+color: white;
+// background-color: grey;
+border: 1px solid grey;
+margin-bottom: 100px;
+color: black;
+text-align: center;
+
+&:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+}
+
+.footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    height: 29vh;
+    text-align: center;
+}
+
+.color{
+    text-shadow: 2px 2px 2px #CE2121;
+    color: white;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    @media screen and (max-width: 400px){
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+// .footerp{
+//     padding-bottom: 100px;
+// }
